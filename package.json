@@ -1,0 +1,24 @@
+{
+    "name": "com.quokkaindiestudio.drawinguitexture",
+    "version": "1.2.3",
+    "displayName": "Drawing UI Texture",
+    "description": "Tool to add drawable RawImage (using only GPU to improve performance).",
+    "unity": "2020.3",
+    "unityRelease": "0f1",
+
+    "keywords": [
+      "shader",
+      "drawing",
+      "painting",
+      "UI",
+      "texture"
+    ],
+
+    "author": {
+      "name":"Quokka Indie Studio",
+      "company": "Quokka Indie Studio",
+      "url": "https://www.quokkaindiestudio.com"
+    },
+    
+    "type": "tool"
+  }
