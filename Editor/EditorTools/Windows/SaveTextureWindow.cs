@@ -13,7 +13,11 @@ namespace LS.DrawTexture.EditorScript
 
         private int TexCount()
         {
-            return Directory.GetFiles(path, "*.png").Length + 1;
+            if (!Directory.Exists(path))
+            {
+                return 0;
+            }
+            else return Directory.GetFiles(path, "*.png").Length;
         }
 
         private FileInfo[] GetFiles()
@@ -26,6 +30,8 @@ namespace LS.DrawTexture.EditorScript
 
         private bool OverrideImage()
         {
+            if (!Directory.Exists(path)) return false;
+
             FileInfo[] fileInfos = GetFiles();
             string currentTextureName = textureName + ".png";
             for (int i = 0; i < fileInfos.Length; ++i)
