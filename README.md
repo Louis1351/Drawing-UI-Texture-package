@@ -7,7 +7,11 @@ using LS.DrawTexture;
 private void MyFunction()
 {
     DrawTextureUI myDrawTexture = GameObject.FindObjectOfType<DrawTextureUI>();
+    
+    //To get current texture
     Texture2D myTexture = myDrawTexture.GetTexture2D();
+    
+    //To reset texture
     myDrawTexture.Clear();
     
     //To change brush texture
@@ -30,5 +34,10 @@ private void MyFunction()
     
     //To allow brush application on alpha texture
     myDrawTexture.DrawOnTransparency = true;
+}
+```
+```C#
+"dependencies": {
+    "com.quokkaindiestudio.drawinguitexture":
 }
 ```
