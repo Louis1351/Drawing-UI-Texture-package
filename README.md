@@ -44,4 +44,4 @@ private void MyFunction()
    }
 }
 ```
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
