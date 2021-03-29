@@ -41,8 +41,8 @@ namespace LS.DrawTexture.Runtime
 
         [SerializeField]
         [Tooltip("Change the brush size")]
-        [Range(0.0f, 100.0f)]
-        private float brushSize = 10.0f;
+        [Range(0.0f, 1.0f)]
+        private float brushSize = 0.5f;
         [Tooltip("Change the brush diffusion")]
         [SerializeField]
         [Range(0.01f, 1.0f)]
@@ -313,7 +313,7 @@ namespace LS.DrawTexture.Runtime
         {
             if (material)
             {
-                material.SetFloat(brushSizeId, brushSize);
+                material.SetFloat(brushSizeId, (1 - brushSize) * 100);
             }
         }
         /// <summary>
