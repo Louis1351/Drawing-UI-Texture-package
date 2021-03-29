@@ -36,7 +36,7 @@ private void MyFunction()
     myDrawTexture.DrawOnTransparency = true;
 }
 ```
-```json
+```javascript
 "dependencies": {
     "com.quokkaindiestudio.drawinguitexture":"https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package.git"
 }
