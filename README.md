@@ -39,6 +39,8 @@ private void MyFunction()
 # How to install package
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
 
+Or add the line below in the dependencies bloc inside the manifest.json
+
 ```json
 {
    "dependencies": 
