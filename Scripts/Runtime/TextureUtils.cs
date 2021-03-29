@@ -41,6 +41,9 @@ namespace LS.DrawTexture.Utils
         /// <returns>The Texture2D created</returns>
         public static Texture2D ToTexture2D(RenderTexture _renderTexture)
         {
+            if (!_renderTexture)
+                return null;
+                
             Texture2D newTexture = new Texture2D(_renderTexture.width, _renderTexture.height, TextureFormat.RGBA32, true);
             RenderTexture.active = _renderTexture;
             newTexture.ReadPixels(new Rect(0, 0, _renderTexture.width, _renderTexture.height), 0, 0);
