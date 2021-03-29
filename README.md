@@ -2,7 +2,7 @@
  Tool to add drawable RawImage (using only GPU to improve performance).
  
  ```C#
-using LS.DrawTexture;
+using LS.DrawTexture.Runtime;
 
 private void MyFunction()
 {
@@ -27,7 +27,7 @@ private void MyFunction()
     myDrawTexture.Opacity = 0.01f;
     
     //To change brush mode
-    myDrawTexture.BrushType = DrawTextureUI.BrushType.none;
+    myDrawTexture.Type = DrawTextureUI.BrushType.none;
     
     //To change brush color
     myDrawTexture.BrushColor = new Color(1.0f,1.0f,1.0f,1.0f);
