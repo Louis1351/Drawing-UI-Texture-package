@@ -36,6 +36,7 @@ private void MyFunction()
     myDrawTexture.DrawOnTransparency = true;
 }
 ```
+# How to install package
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
 
 ```json
