@@ -12,10 +12,10 @@ private void MyFunction()
     
     myDrawTexture.IdTexture = 0;
     myDrawTexture.BrushSize = 0.5f;
-    myDrawTexture.idTexture = 0;
-    myDrawTexture.idTexture = 0;
-    myDrawTexture.idTexture = 0;
-    myDrawTexture.idTexture = 0;
-    myDrawTexture.idTexture = 0;
+    myDrawTexture.Diffusion = 0.01f;
+    myDrawTexture.Opacity = 0.01f;
+    myDrawTexture.BrushType = DrawTextureUI.BrushType.none;
+    myDrawTexture.BrushColor = new Color(1.0f,1.0f,1.0f,1.0f);
+    myDrawTexture.DrawOnTransparency = true;
 }
 ```
