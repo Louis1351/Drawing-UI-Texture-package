@@ -36,6 +36,8 @@ private void MyFunction()
     myDrawTexture.DrawOnTransparency = true;
 }
 ```
+![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
+
 ```json
 {
    "dependencies": 
@@ -44,4 +46,3 @@ private void MyFunction()
    }
 }
 ```
-![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
