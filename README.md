@@ -16,6 +16,8 @@ Or add the line below in the dependencies bloc inside the manifest.json
 ```
 
 # How it works
+Doesn't work with canvas in screen space render mode.
+
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto1.png)
 ```C#
 using LS.DrawTexture.Runtime;
