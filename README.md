@@ -38,9 +38,6 @@ private void MyFunction()
     //To change brush size
     myDrawTexture.BrushSize = 0.5f;
     
-    //To change brush diffusion
-    myDrawTexture.Diffusion = 0.01f;
-    
     //To change brush Opacity
     myDrawTexture.Opacity = 0.01f;
     
