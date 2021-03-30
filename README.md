@@ -79,6 +79,7 @@ private void MyFunction()
 ## Save texture (Display only at Runtime)
 Save the current texture in the Textures Saved folder (Assets/Textures Saved/)<br>
 After that you have to refresh files to see the folder.<br>
-**WARNING** do not refresh files while the scene is playing.
+
+**WARNING do not refresh files while the scene is playing.**
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.PNG)
