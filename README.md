@@ -1,5 +1,5 @@
 # Drawing UI Texture package
- Tool to add drawable RawImage for Unity(using only GPU to improve performance).
+ Tool to add drawable RawImage for Unity (using only GPU to improve performance).
  
 ![Header image](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/header.gif)
  
