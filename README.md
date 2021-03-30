@@ -76,6 +76,8 @@ private void MyFunction()
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto3.PNG)
 
-## Save texture (Display only in Runtime)
+## Save texture (Display only at Runtime)
+Save the current texture in the Textures Saved folder (Assets/Textures Saved/)<br>
+**warning** do not refresh files 
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.PNG)
