@@ -4,7 +4,7 @@
 ![Header image](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/header.gif)
  
 # How to install package
-You can add the package with the new Package Manager from the window menu. (Window -> Package Manager)
+You can add the package with the new Package Manager from the window menu using the repository address https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package.git. (Window -> Package Manager)
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
 
@@ -37,6 +37,16 @@ Add the Draw texture from hiearchy window.
 * **Type** - To change brush mode.
 * **Draw on tranparency** - To allow brush application on alpha texture.
 * **Resolution** - To change image resolution in the Start function.
+
+![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto6.PNG)
+
+* **None** - To apply color 
+* **Eraser** - To erase the drawing
+* **Negative** - To change image color in negative color.
+* **Additive** - To apply color additively.
+* **Multiply** - To multiply color.
+* **Subtract Alpha** - To reduce alpha.
+* **Add Alpha** - To add alpha.
 
 ## In code
 
