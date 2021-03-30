@@ -79,13 +79,13 @@ private void MyFunction()
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.PNG)
 
-* **Clear** - To change brush texture.
-* **Save** - To change brush size.
+* **Clear** - To reset texture.
+* **Save** - To save current texture.
 
 Save the current texture in the Textures Saved folder (Assets/Textures Saved/)<br>
 After that you have to refresh files to see the folder.<br>
 
 **WARNING do not refresh files while the scene is playing.**
 
-#TO DO
+# TO DO
 
