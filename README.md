@@ -18,11 +18,12 @@ Or add the line below in the dependencies block inside the manifest.json
 ```
 
 # How it works
-## Add draw texture 
-First create a canvas in World Space or in Screen Space - Camera<br>
+## Add a Drawing UI Texture 
+First create a new canvas in World Space or in Screen Space - Camera.<br>
 Doesn't work with canvas in Screen Space - Overlay render mode.<br>
 
 Add the Draw texture from hiearchy window.
+
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto1.png)
 ```C#
 using LS.DrawTexture.Runtime;
