@@ -28,10 +28,14 @@ Add the Draw texture from hiearchy window.
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto2.PNG)
 
+On the script object<br>
 * **Brushes** - To select the current object.
 * **Size** - To select the current object.
 * **Opacity** - To select the current object.
 * **Color** - To select the current object.
+* **Type** - To select the current object.
+* **Draw on tranparency** - To select the current object.
+* **Resolution** - To select the current object.
 
 ## Add a new brush
 
