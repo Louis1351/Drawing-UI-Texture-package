@@ -77,6 +77,9 @@ private void MyFunction()
 
 To add a new brush, you have to do a Resources folder and inside it, add the Brushes folder.
 
+The texture must have a white border and the width and height texture have to be the same (for instance 512x512).<br>
+**WARNING do not generate mip maps.**
+
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto5.PNG)
 
 ## Other parameters for the texture (Display only at Runtime)
