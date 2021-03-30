@@ -25,9 +25,13 @@ Doesn't work with canvas in Screen Space - Overlay render mode.<br>
 Add the Draw texture from hiearchy window.
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto1.png)
+
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto2.png)
+
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto3.png)
+
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.png)
+
 ```C#
 using LS.DrawTexture.Runtime;
 
