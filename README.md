@@ -2,8 +2,7 @@
  Tool to add drawable RawImage (using only GPU to improve performance).
  
 # How to install package
-You can add the package with the new Package Manager.<br>
-You can find it in the window menu. (Window -> Package Manager)
+You can add the package with the new Package Manager from the window menu. (Window -> Package Manager)
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
 
