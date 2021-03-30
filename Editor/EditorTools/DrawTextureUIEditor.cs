@@ -71,6 +71,13 @@ namespace LS.DrawTexture.EditorScript
 
                 EditorGUILayout.PropertyField(brushSize);
                 EditorGUILayout.PropertyField(opacity);
+                
+                if (type.enumValueIndex == (int)DrawTextureUI.BrushType.none
+               || type.enumValueIndex == (int)DrawTextureUI.BrushType.additive
+               || type.enumValueIndex == (int)DrawTextureUI.BrushType.multiply)
+                {
+                    EditorGUILayout.PropertyField(brushColor);
+                }
             }
             EditorGUILayout.EndFoldoutHeaderGroup();
 
@@ -78,12 +85,6 @@ namespace LS.DrawTexture.EditorScript
             if (foldoutGroup2)
             {
                 EditorGUILayout.PropertyField(type);
-                if (type.enumValueIndex == (int)DrawTextureUI.BrushType.none
-                || type.enumValueIndex == (int)DrawTextureUI.BrushType.additive
-                || type.enumValueIndex == (int)DrawTextureUI.BrushType.multiply)
-                {
-                    EditorGUILayout.PropertyField(brushColor);
-                }
 
                 EditorGUILayout.PropertyField(drawOnTransparency);
             }
