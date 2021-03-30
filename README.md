@@ -40,6 +40,8 @@ Add the Draw texture from hiearchy window.
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto6.PNG)
 
+the different types are pretty straight forward.
+
 * **None** - To apply color 
 * **Eraser** - To erase the drawing
 * **Negative** - To change image color in negative color.
