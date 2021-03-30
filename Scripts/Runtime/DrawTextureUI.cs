@@ -82,7 +82,6 @@ namespace LS.DrawTexture.Runtime
         private int pos0Id = Shader.PropertyToID("_Position0");
         private int pos1Id = Shader.PropertyToID("_Position1");
         private int brushSizeId = Shader.PropertyToID("_brushSize");
-        private int diffusionId = Shader.PropertyToID("_diffusion");
         private int opacityId = Shader.PropertyToID("_opacity");
         private int brushColorId = Shader.PropertyToID("_brushColor");
         private int drawOnTransparencyId = Shader.PropertyToID("_drawOnTransparency");
