@@ -10,9 +10,9 @@ namespace LS.DrawTexture.EditorScript
     public class DrawTextureUIEditor : Editor
     {
         private DrawTextureUI component = null;
-        private SerializedProperty brushSize;
+        private SerializedProperty size;
         private SerializedProperty opacity;
-        private SerializedProperty brushColor;
+        private SerializedProperty color;
         private SerializedProperty drawOnTransparency;
         private SerializedProperty gradientColor;
         private SerializedProperty type;
@@ -69,14 +69,14 @@ namespace LS.DrawTexture.EditorScript
                 EditorGUILayout.EndVertical();
                 EditorGUILayout.EndHorizontal();
 
-                EditorGUILayout.PropertyField(brushSize);
+                EditorGUILayout.PropertyField(size);
                 EditorGUILayout.PropertyField(opacity);
-                
+
                 if (type.enumValueIndex == (int)DrawTextureUI.BrushType.none
                || type.enumValueIndex == (int)DrawTextureUI.BrushType.additive
                || type.enumValueIndex == (int)DrawTextureUI.BrushType.multiply)
                 {
-                    EditorGUILayout.PropertyField(brushColor);
+                    EditorGUILayout.PropertyField(color);
                 }
             }
             EditorGUILayout.EndFoldoutHeaderGroup();
@@ -123,10 +123,10 @@ namespace LS.DrawTexture.EditorScript
 
         private void UpdateComponent()
         {
-            if (brushSize.floatValue != brushSizeTemp)
+            if (size.floatValue != brushSizeTemp)
             {
-                component.BrushSize = brushSize.floatValue;
-                brushSizeTemp = brushSize.floatValue;
+                component.Size = size.floatValue;
+                brushSizeTemp = size.floatValue;
             }
 
             if (opacity.floatValue != opacityTemp)
@@ -135,10 +135,10 @@ namespace LS.DrawTexture.EditorScript
                 opacityTemp = opacity.floatValue;
             }
 
-            if (brushColor.colorValue != brushColorTemp)
+            if (color.colorValue != brushColorTemp)
             {
-                component.BrushColor = brushColor.colorValue;
-                brushColorTemp = brushColor.colorValue;
+                component.Color = color.colorValue;
+                brushColorTemp = color.colorValue;
             }
 
             if (drawOnTransparency.boolValue != drawOnTransparencyTemp)
@@ -151,9 +151,9 @@ namespace LS.DrawTexture.EditorScript
         private void Initialize()
         {
             component = (DrawTextureUI)target;
-            brushSize = serializedObject.FindProperty("brushSize");
+            size = serializedObject.FindProperty("size");
             opacity = serializedObject.FindProperty("opacity");
-            brushColor = serializedObject.FindProperty("brushColor");
+            color = serializedObject.FindProperty("color");
             gradientColor = serializedObject.FindProperty("gradientColor");
             type = serializedObject.FindProperty("type");
             drawOnTransparency = serializedObject.FindProperty("drawOnTransparency");

@@ -42,7 +42,7 @@ namespace LS.DrawTexture.Runtime
         [SerializeField]
         [Tooltip("Change the brush size")]
         [Range(0.0f, 1.0f)]
-        private float brushSize = 0.5f;
+        private float size = 0.5f;
         [Tooltip("Change the brush opacity")]
         [SerializeField]
         [Range(0.0f, 1.0f)]
@@ -52,7 +52,7 @@ namespace LS.DrawTexture.Runtime
         private BrushType type = BrushType.none;
         [Tooltip("Change the brush color")]
         [SerializeField]
-        private Color brushColor = Color.blue;
+        private Color color = Color.blue;
         [Tooltip("If the brush can be apply on the transparency or not (ie when Alpha Texture is inferior to 1)")]
         [SerializeField]
         private bool drawOnTransparency = true;
@@ -100,12 +100,12 @@ namespace LS.DrawTexture.Runtime
                 ChangeBrush();
             }
         }
-        public float BrushSize
+        public float Size
         {
-            get => brushSize;
+            get => size;
             set
             {
-                brushSize = value;
+                size = value;
                 ChangeSize();
             }
         }
@@ -126,12 +126,12 @@ namespace LS.DrawTexture.Runtime
                 type = value;
             }
         }
-        public Color BrushColor
+        public Color Color
         {
-            get => brushColor;
+            get => color;
             set
             {
-                brushColor = value;
+                color = value;
                 ChangeColor();
             }
         }
@@ -299,7 +299,7 @@ namespace LS.DrawTexture.Runtime
         {
             if (material)
             {
-                material.SetFloat(brushSizeId, (1 - brushSize) * 100);
+                material.SetFloat(brushSizeId, (1 - size) * 100);
             }
         }
         /// <summary>
@@ -316,7 +316,7 @@ namespace LS.DrawTexture.Runtime
         private void ChangeColor()
         {
             if (material)
-                material.SetColor(brushColorId, brushColor);
+                material.SetColor(brushColorId, color);
         }
         /// <summary>
         /// Set property shader for the brush application.
