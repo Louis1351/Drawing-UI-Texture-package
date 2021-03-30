@@ -58,7 +58,7 @@ private void MyFunction()
     myDrawTexture.IdTexture = 0;
     
     //To change brush size
-    myDrawTexture.BrushSize = 0.5f;
+    myDrawTexture.Size = 0.5f;
     
     //To change brush Opacity
     myDrawTexture.Opacity = 0.01f;
@@ -67,7 +67,7 @@ private void MyFunction()
     myDrawTexture.Type = DrawTextureUI.BrushType.none;
     
     //To change brush color
-    myDrawTexture.BrushColor = new Color(1.0f,1.0f,1.0f,1.0f);
+    myDrawTexture.Color = new Color(1.0f,1.0f,1.0f,1.0f);
     
     //To allow brush application on alpha texture
     myDrawTexture.DrawOnTransparency = true;
