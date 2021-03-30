@@ -1,6 +1,8 @@
 # Drawing UI Texture package
  Tool to add drawable RawImage (using only GPU to improve performance).
  
+![Header image] (https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/header.gif)
+ 
 # How to install package
 You can add the package with the new Package Manager from the window menu. (Window -> Package Manager)
 
