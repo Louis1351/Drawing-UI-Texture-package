@@ -89,3 +89,5 @@ After that you have to refresh files to see the folder.<br>
 
 # TO DO
 
+* Add more modes
+
