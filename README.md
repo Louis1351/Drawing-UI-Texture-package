@@ -75,6 +75,8 @@ private void MyFunction()
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto3.PNG)
 
+To add a new brush, you have to do a Resources folder and inside it, add the Brushes folder.
+
 ## Other parameters for the texture (Display only at Runtime)
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.PNG)
