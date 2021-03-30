@@ -80,7 +80,7 @@ To add a new brush, you have to do a Resources folder and inside it, add the Bru
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto5.PNG)
 
 The texture must have a white border and the width and height texture have to be the same (for instance 512x512).<br>
-**<font color="yellow">WARNING</font> do not generate mip maps.**
+**WARNING do not generate mip maps.**
 
 ## Other parameters for the texture (Display only at Runtime)
 
@@ -92,7 +92,7 @@ The texture must have a white border and the width and height texture have to be
 Save the current texture in the Textures Saved folder (Assets/Textures Saved/)<br>
 After that you have to refresh files to see the folder.<br>
 
-**<font color="yellow">WARNING</font> do not refresh files while the scene is playing.**
+**WARNING do not refresh files while the scene is playing.**
 
 # TO DO
 
