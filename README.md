@@ -6,7 +6,7 @@ You can add the package with the new Package Manager from the window menu. (Wind
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
 
-Or add the line below in the dependencies bloc inside the manifest.json
+Or add the line below in the dependencies block inside the manifest.json
 
 ```json
 {
@@ -18,8 +18,11 @@ Or add the line below in the dependencies bloc inside the manifest.json
 ```
 
 # How it works
-Doesn't work with canvas in screen space render mode.
+## Add draw texture 
+First create a canvas in World Space or in Screen Space - Camera<br>
+Doesn't work with canvas in Screen Space - Overlay render mode.<br>
 
+Add the Draw texture from hiearchy window.
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto1.png)
 ```C#
 using LS.DrawTexture.Runtime;
