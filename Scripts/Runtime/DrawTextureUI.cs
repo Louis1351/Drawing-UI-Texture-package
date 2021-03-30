@@ -43,10 +43,6 @@ namespace LS.DrawTexture.Runtime
         [Tooltip("Change the brush size")]
         [Range(0.0f, 1.0f)]
         private float brushSize = 0.5f;
-        [Tooltip("Change the brush diffusion")]
-        [SerializeField]
-        [Range(0.01f, 1.0f)]
-        private float diffusion = 0.01f;
         [Tooltip("Change the brush opacity")]
         [SerializeField]
         [Range(0.0f, 1.0f)]
@@ -56,7 +52,7 @@ namespace LS.DrawTexture.Runtime
         private BrushType type = BrushType.none;
         [Tooltip("Change the brush color")]
         [SerializeField]
-        private Color brushColor = Color.white;
+        private Color brushColor = Color.blue;
         [Tooltip("If the brush can be apply on the transparency or not (ie when Alpha Texture is inferior to 1)")]
         [SerializeField]
         private bool drawOnTransparency = true;
@@ -111,15 +107,6 @@ namespace LS.DrawTexture.Runtime
             {
                 brushSize = value;
                 ChangeSize();
-            }
-        }
-        public float Diffusion
-        {
-            get => diffusion;
-            set
-            {
-                diffusion = value;
-                ChangeDiffusion();
             }
         }
         public float Opacity
@@ -288,7 +275,6 @@ namespace LS.DrawTexture.Runtime
 
             ChangeColor();
             ChangeSize();
-            ChangeDiffusion();
             ChangeOpacity();
             ChangeBrush();
             ChangeTransparency();
@@ -315,14 +301,6 @@ namespace LS.DrawTexture.Runtime
             {
                 material.SetFloat(brushSizeId, (1 - brushSize) * 100);
             }
-        }
-        /// <summary>
-        /// Set property shader for the brush diffusion.
-        /// </summary>
-        private void ChangeDiffusion()
-        {
-            if (material)
-                material.SetFloat(diffusionId, diffusion);
         }
         /// <summary>
         /// Set property shader for the brush opacity.

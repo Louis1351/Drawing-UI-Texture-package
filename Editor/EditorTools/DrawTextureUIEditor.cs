@@ -11,7 +11,6 @@ namespace LS.DrawTexture.EditorScript
     {
         private DrawTextureUI component = null;
         private SerializedProperty brushSize;
-        private SerializedProperty diffusion;
         private SerializedProperty opacity;
         private SerializedProperty brushColor;
         private SerializedProperty drawOnTransparency;
@@ -20,7 +19,6 @@ namespace LS.DrawTexture.EditorScript
         private SerializedProperty resolution;
 
         private float brushSizeTemp = 0.0f;
-        private float diffusionTemp = 0.0f;
         private float opacityTemp = 0.0f;
         private Color brushColorTemp = Color.clear;
         private bool drawOnTransparencyTemp = true;
@@ -72,7 +70,6 @@ namespace LS.DrawTexture.EditorScript
                 EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.PropertyField(brushSize);
-                EditorGUILayout.PropertyField(diffusion);
                 EditorGUILayout.PropertyField(opacity);
             }
             EditorGUILayout.EndFoldoutHeaderGroup();
@@ -131,12 +128,6 @@ namespace LS.DrawTexture.EditorScript
                 brushSizeTemp = brushSize.floatValue;
             }
 
-            if (diffusion.floatValue != diffusionTemp)
-            {
-                component.Diffusion = diffusion.floatValue;
-                diffusionTemp = diffusion.floatValue;
-            }
-
             if (opacity.floatValue != opacityTemp)
             {
                 component.Opacity = opacity.floatValue;
@@ -160,7 +151,6 @@ namespace LS.DrawTexture.EditorScript
         {
             component = (DrawTextureUI)target;
             brushSize = serializedObject.FindProperty("brushSize");
-            diffusion = serializedObject.FindProperty("diffusion");
             opacity = serializedObject.FindProperty("opacity");
             brushColor = serializedObject.FindProperty("brushColor");
             gradientColor = serializedObject.FindProperty("gradientColor");

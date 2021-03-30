@@ -43,7 +43,6 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
             float _opacity;
             int _drawOnTransparency;
 
@@ -64,11 +63,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
@@ -120,7 +120,6 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
             float _opacity;
             int _drawOnTransparency;
 
@@ -141,11 +140,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
-                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
+                brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
@@ -196,7 +196,7 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
+        
             float _opacity;
             int _drawOnTransparency;
 
@@ -219,11 +219,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
@@ -274,7 +275,7 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
+    
             float _opacity;
             int _drawOnTransparency;
 
@@ -295,11 +296,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
@@ -350,7 +352,7 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
+          
             float _opacity;
             int _drawOnTransparency;
 
@@ -372,11 +374,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
@@ -427,7 +430,7 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
+          
             float _opacity;
 
             sampler2D _MainTex;
@@ -445,11 +448,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
@@ -500,7 +504,7 @@
             float2 _Position1;
 
             float _brushSize;
-            float _diffusion;
+          
             float _opacity;
 
             sampler2D _MainTex;
@@ -518,11 +522,12 @@
 
                 float2 newpos;
                 float pattern = 0.0f;
+                float diffusion = max(0.001f,dist*0.001f);
 
                 brush = tex2D(_BrushTex, (i.uv -_Position0 )*_brushSize + CENTER); 
                 pattern = pattern + (1-brush); 
 
-                for (float step = 0.0f; step <= dist; step += _diffusion)
+                for (float step = 0.0f; step <= dist; step += diffusion)
                 {
                     newpos = _Position0 + (nvec * step);
 
