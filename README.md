@@ -1,7 +1,25 @@
 # Drawing UI Texture package
  Tool to add drawable RawImage (using only GPU to improve performance).
  
- ```C#
+# How to install package
+![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
+
+Or add the line below in the dependencies bloc inside the manifest.json
+
+```json
+{
+   "dependencies": 
+   {
+       "com.quokkaindiestudio.drawinguitexture":"https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package.git"
+   }
+}
+```
+
+# How it works
+Doesn't work with canvas in screen space render mode.
+
+![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto1.png)
+```C#
 using LS.DrawTexture.Runtime;
 
 private void MyFunction()
@@ -34,15 +52,5 @@ private void MyFunction()
     
     //To allow brush application on alpha texture
     myDrawTexture.DrawOnTransparency = true;
-}
-```
-![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto.png)
-
-```json
-{
-   "dependencies": 
-   {
-       "com.quokkaindiestudio.drawinguitexture":"https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package.git"
-   }
 }
 ```
