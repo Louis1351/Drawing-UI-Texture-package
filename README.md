@@ -28,7 +28,6 @@ Add the Draw texture from hiearchy window.
 
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto2.PNG)
 
-On the script object<br>
 * **Brushes** - To change brush texture.
 * **Size** - To change brush size.
 * **Opacity** - To change brush opacity.
@@ -77,9 +76,16 @@ private void MyFunction()
 ![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto3.PNG)
 
 ## Save texture (Display only at Runtime)
+
+![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.PNG)
+
+* **Clear** - To change brush texture.
+* **Save** - To change brush size.
+
 Save the current texture in the Textures Saved folder (Assets/Textures Saved/)<br>
 After that you have to refresh files to see the folder.<br>
 
 **WARNING do not refresh files while the scene is playing.**
 
-![Image of Tutorial git](https://github.com/Quokka-Indie-Studio/Drawing-UI-Texture-package/blob/main/Images/gitTuto4.PNG)
+#TO DO
+
